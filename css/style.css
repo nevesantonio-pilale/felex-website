@@ -1,6 +1,6 @@
 * {padding: 0; margin: 0; box-sizing: border-box;}
 html {scroll-behavior: smooth;}
-body {font-family: 'Merriweather', 'Helvetica' 'Arial' sans-serif; background-color: #cdcdcd; color: #707070;}
+body {font-family: 'Merriweather', 'Helvetica' 'Arial' sans-serif; background-color: #fff; color: #707070;}
 a {text-decoration: none;}
 
 /* Classes utilitárias */
@@ -15,7 +15,7 @@ a {text-decoration: none;}
 }
 
 .primary-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -76,6 +76,11 @@ nav .navbar-container .navbar-right ul li a {
     margin: 0 0.5rem;
     color: #000;
     transition: all 0.2s ease;
+}
+
+nav .navbar-container .navbar-right ul li a i {
+    color: #5bb6ef;
+    padding-right: .2rem;
 }
 
 nav .navbar-container .navbar-right ul li a:hover{
@@ -198,9 +203,10 @@ main .section-about-service .card-about-service h2 {
     font-weight: bold;
 }
 
-main .section-about-service .card-about-service p {
-    margin-bottom: 1rem;
-    font-size: 0.8rem;
+main .section-about-service .p-first {
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
 }
 
 main .section-about-service .card-about-service .btn-details {
@@ -217,7 +223,15 @@ main .section-about-service .card-about-service .btn-details:hover {
     background-color: blue;
 }
 
+main .section-about-service .cards .card-about-service .about-service-content p {
+    font-size: 1rem;
+}
+
 /* SECTION MOMENTS CAPTURED */
+main .photos {
+    position: relative;
+}
+
 main .moments-captured .photos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -231,6 +245,16 @@ main .moments-captured h2 {
 
 main .moments-captured .moments-captured-content {
     max-width: 100%;
+    overflow: hidden;
+}
+
+.hover-image {
+    transition: transform 0.3s, filter 0.3s ease-in-out;
+}
+
+.hover-image:hover {
+    transform: scale(1.2);
+    filter: brightness(60%);
 }
 
 /*.main .moments-captured .moments-captured-content:hover::before {
@@ -245,13 +269,22 @@ main .moments-captured .moments-captured-content {
     transition: background-color 0.3s ease;
 }*/
 
-main .moments-captured .moments-captured-content img {
+main .moments-captured .photos .moments-captured-content img {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
     cursor: pointer;
     display: block;
+}
+
+main .moments-captured .photos .moments-captured-content::before {
+   content: "";
+   background-color: #000;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: block;
 }
 
 
@@ -274,7 +307,7 @@ main .photos-session h2 {
 
 main .photos-session p {
     padding-bottom: 1rem;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
 
 main .photos-session form {
@@ -288,7 +321,7 @@ main .photos-session form label {
     color: #808080;
     font-weight: bold;
     margin-top: .5rem;
-    font-size: small;
+    font-size: 1rem;
 }
 
 main .photos-session form input, textarea {
@@ -306,7 +339,7 @@ main .photos-session form input[type= "submit"] {
     padding: 1rem 2rem;
     margin-bottom: 2rem;
     margin-top: 1rem;
-    background-color: #010215;
+    background-color: #5bb6ef;
     border-radius: 5px;
     border: none;
     color: #FFFFFF;
@@ -359,15 +392,16 @@ main .about-section .midia-social {
     margin-top: 0.5rem;
 }
 
-main .about-section .midia-social a {
+main .about-section .midia-social a i {
     margin-right: 0.5rem;
     font-size: 1.5rem;
-    color: #010215;
+    color: #5bb6ef;
     transition: all 0.5s ease;
 }
 
-main .about-section .midia-social a:hover {
-    opacity: 0.5;
+
+main .about-section .midia-social a i:hover {
+    opacity: .5;
 }
 
 
@@ -405,9 +439,74 @@ main .gallery-section .photos-gallery .moments-captured-content img {
     display: block;
 }
 
+/* CONTACT SECTION */
+main .contact-section {
+    margin-bottom: 2rem;
+}
+
+main .contact-section h2 {
+    margin-bottom: 2rem;
+}
+
+main .contact-section .contact-section-adress {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+main .contact-section .contact-section-adress .contact-section-adress-form label {
+    display: block;
+    margin: .5rem 0 .5rem 0;
+}
+
+main .contact-section .contact-section-adress .contact-section-adress-form input, textarea {
+    width: 100%;
+    padding: .5rem;
+    background-color: transparent;
+    border: .1rem solid #d6d6d6;
+    outline: none;
+}
+
+main .contact-section .contact-section-adress .contact-section-adress-form input[type = "submit"] {
+    background-color: #5bb6ef;
+    margin: 1rem 0 2rem 0;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+main .contact-section .contact-section-adress .contact-section-adress-location ul {
+    list-style: none;
+}
+
+main .contact-section .contact-section-adress .contact-section-adress-location ul li {
+    padding: .5rem;
+}
+
+main .contact-section .contact-section-adress .contact-section-adress-location ul li p i {
+    color: #5bb6ef;
+}
+/* Mapa */
+.mapouter {
+    position:relative;
+    text-align:right;
+    width:100%;
+    height:400px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:100%;
+    height:400px;
+}
+
+.gmap_iframe {
+    height:400px!important;
+}
+
 /* FOOTER STYLE */
 footer {
-    background-color: #dd875a;
+    background-color: #000000;
 }
 
 footer .footer-section {
@@ -425,6 +524,7 @@ footer .footer-section .title-section {
 
 footer .footer-section > div {
     padding-bottom: 1rem;
+    padding-right: 1rem;
 }
 
 footer .footer-section > div:nth-child(1) {
@@ -450,12 +550,14 @@ footer .footer-section > div ul {
 footer .footer-section > div ul li {
     color: #FFFFFF;
     font-size: 1.3rem;
+    padding-bottom: .5rem;
 }
 
 footer .footer-section > div ul li a {
     color: #FFFFFF;
     font-size: 1.3rem;
 }
+
 
 footer .copyright {
     background-color: #000000;
