@@ -93,31 +93,6 @@ header {
     height: 85vh;
 }
 
-/*«««««««««««««««««««««««««««««««««««««««««««««««««*/
-/*header {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 24px;
-  }
-
-  #slideshow {
-    display: flex;
-    overflow: hidden;
-    width: 100vw;
-    height: calc(85vh - 10rem); /* Ajuste conforme necessário para o tamanho do cabeçalho 
-  }
-
-  .slide {
-    min-width: 100%;
-    transition: 1s;
-  }*/
-/*«««««««««««««««««««««««««««««««««««««««««««««««««««««*/
-
 
 header .showcase {
     display: flex;
@@ -243,12 +218,15 @@ main .moments-captured h2 {
     margin-bottom: 1rem;
 }
 
-main .moments-captured .moments-captured-content {
+main .moments-captured .moments-captured-content{
     max-width: 100%;
     overflow: hidden;
 }
 
-.hover-image {
+
+
+
+.hover-image, .hover img {
     transition: transform 0.3s, filter 0.3s ease-in-out;
 }
 
@@ -256,18 +234,6 @@ main .moments-captured .moments-captured-content {
     transform: scale(1.2);
     filter: brightness(60%);
 }
-
-/*.main .moments-captured .moments-captured-content:hover::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    transition: background-color 0.3s ease;
-}*/
 
 main .moments-captured .photos .moments-captured-content img {
     max-width: 100%;
@@ -301,8 +267,10 @@ main .moments-captured .moments-captured-content:nth-child(9) {
 }
 
 /* contact section */
-main .photos-session h2 {
-    margin-top: 4rem;
+main .photos-session h2,
+.contact-section-galerry h3 {
+    margin: 4rem 0 2rem 0;
+    color: #000;
 }
 
 main .photos-session p {
@@ -310,21 +278,24 @@ main .photos-session p {
     font-size: 1.2rem;
 }
 
-main .photos-session form {
+main .photos-session form
+.contact-section-galerry form{
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
 }
 
-main .photos-session form label {
+main .photos-session form label,
+.contact-section-galerry label {
     display: block;
     color: #808080;
     font-weight: bold;
-    margin-top: .5rem;
+    margin: .5rem 0 0.8rem;
     font-size: 1rem;
 }
 
-main .photos-session form input, textarea {
+main .photos-session form input, textarea,
+.contact-section-galerry form input, textarea {
     width: 100%;
     padding: 0.5rem;
     border-top: none;
@@ -334,7 +305,9 @@ main .photos-session form input, textarea {
     outline: none;
 }
 
-main .photos-session form input[type= "submit"] {
+
+main .photos-session form input[type= "submit"],
+.contact-section-galerry form input[type= "submit"]  {
     width: 200px;
     padding: 1rem 2rem;
     margin-bottom: 2rem;
@@ -348,7 +321,8 @@ main .photos-session form input[type= "submit"] {
     transition: all 0.2s ease;
 }
 
-main .photos-session form input[type= "submit"]:hover {
+main .photos-session form input[type= "submit"]:hover,
+main .contact-section-galerry form input[type= "submit"]:hover {
     background-color: #f2f2f2;
     color: #808080;
 }
@@ -357,9 +331,7 @@ main .photos-session form input[type= "submit"]:hover {
 
 /* SECTION ABOUT */
 main .about-section {
-    /*margin-bottom: 1rem;*/
     margin-top: 2rem;
-    /*background-color: #808080;*/
     padding: 0.5rem;
     left: 0;
 }
@@ -371,6 +343,10 @@ main .about-section-content {
     align-items: center;
     justify-content: center;
     gap: 3rem;
+}
+
+main .about-section-content p {
+    font-size: 1.2rem;
 }
 
 main .about-section-content .img-about {
@@ -387,7 +363,6 @@ main .about-section-content img {
 }
 
 main .about-section .midia-social {
-    /*background-color: #bababa;*/
     padding-top: 1rem;
     margin-top: 0.5rem;
 }
@@ -437,6 +412,12 @@ main .gallery-section .photos-gallery .moments-captured-content img {
     border-radius: 5px;
     cursor: pointer;
     display: block;
+}
+
+.content-hover {
+    background-color: #000;
+    position: absolute;
+    z-index: 1;
 }
 
 /* CONTACT SECTION */
@@ -524,7 +505,6 @@ footer .footer-section .title-section {
 
 footer .footer-section > div {
     padding-bottom: 1rem;
-    padding-right: 1rem;
 }
 
 footer .footer-section > div:nth-child(1) {
