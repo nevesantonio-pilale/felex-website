@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" Felex Photography, sua marca pessoal de fotografia dedicada a capturar momentos inesquecíveis. Oferecemos serviços especializados que transformam cada instante em memórias eternas. Explore nossa paixão pela arte da fotografia e reserve agora para garantir imagens excepcionais que contam a sua história de maneira única e autêntica.">
-    <title>Felex Photography | Início </title>
+    <title>Felex Photography | Galeria </title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- MEDIA QUERRY-->
+    <link
+        rel="stylesheet"
+        media="(max-width: 768px)"
+        href="css/mobile.css"
+    >
 
     <!-- FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,6 +36,11 @@
                         <img src="./image/img-logo.png" alt="imagem de logotipo Felex Photography">
                         <p class="logo-description">Felex Photography</p>
                     </a>
+
+                    <button class="menu-trigger">
+                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-times"></i>
+                    </button>
                 </div>
 
                 <nav class="social-midia">
@@ -36,7 +48,7 @@
                 </nav>
 
                 <nav class="navbar-right">
-                    <ul>
+                    <ul class="navbar-right-content">
                         <li>
                             <a href="index.html"> <i class="fas fa-home"></i> Início </a>
                         <li>
@@ -210,6 +222,17 @@
     <!-- END FOOTER -->
 
     <!-- SCRIPT FONT AWESOME -->
+    <script>
+        const menuTriggerBtn = document.querySelector(".menu-trigger");
+        const navBotton = document.querySelector(".navbar-right");
+        const hunburguerIcon = document.querySelector(".fa-bars");
+
+        menuTriggerBtn.addEventListener("click", () => {
+            navBotton.classList.toggle("show");
+            hunburguerIcon.classList.toggle("show");
+        });
+    </script>
+
     <script 
         src="https://kit.fontawesome.com/7964f63da0.js" 
         crossorigin="anonymous">

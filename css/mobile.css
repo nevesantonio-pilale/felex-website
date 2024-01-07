@@ -1,3 +1,13 @@
+/* Header */
+header .showcase {
+    top: 8rem;
+}
+
+header .showcase .showcase-info .btn {
+    margin: 1rem auto;
+}
+
+/* Main */
 main .section-about-service .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: .5rem;
@@ -66,4 +76,159 @@ main .about-section-content .img-about {
 main .about-section-content img {
     max-width: 100%;
     max-height: 100%;
+}
+
+main .about-section .midia-social {
+    display: none;
+}
+
+/* Galerry section */
+main .gallery-section .photos-gallery {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* smartphone */
+@media (max-width: 500px) {
+    /* Navbar */
+
+    nav .navbar-container .navbar-left a img{
+        display: none;
+    }
+
+    nav .navbar-container .navbar-left a p {
+        font-size: 1rem;
+        padding-left: 0;
+        margin-bottom: .5rem;
+        margin-left: 0;
+    }
+
+    nav .navbar-container .navbar-right {
+        display: flex;
+        margin: auto;
+    }
+
+    nav .navbar-container .navbar-right .navbar-right-content {
+        flex-direction: column;
+    }
+
+    nav .navbar-container .navbar-right ul li {
+        padding-top: .5rem;
+    }
+
+    nav .navbar-container .navbar-right ul li a i {
+        display: none;
+    }
+
+    .active {
+        border-bottom: none;
+    }
+
+    /* Menu hamburger */
+    nav .navbar-container .navbar-left {
+        justify-content: space-between;
+    }
+
+    nav .navbar-left .menu-trigger {
+        display: unset;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-left: 5rem;
+    }
+
+    nav .navbar-container .navbar-right {
+        display: none;
+    }
+
+    nav .navbar-container .navbar-right.show {
+        display: block;
+    }
+
+    nav .navbar-container .navbar-left .fa-bars + .fa-times {
+        display: none;
+    }
+
+    nav .navbar-container .navbar-left .fa-bars.show + .fa-times {
+        display: inline;
+        color: red;
+    }
+
+    nav .navbar-container .navbar-left .fa-bars.show {
+        display: none;
+    }
+
+    /* HEADER  */
+    header .showcase {
+        top: 3rem;
+    }
+
+    header .showcase .showcase-info h1 {
+        font-size: 1rem;
+    }
+
+    header .showcase .showcase-info p {
+        font-size: 1rem;
+    }
+
+    header .showcase .showcase-info p span {
+        font-size: 1.2rem;
+    }
+
+    header .showcase .showcase-info .btn {
+        padding: .5rem .5rem;
+        display: flex;
+        max-width: 200px;
+        font-size: 1.2rem;
+    }
+
+    /* Main */
+    main .section-about-service .cards {
+        grid-template-columns: 1fr;
+    }
+    
+    main .moments-captured .photos {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    main .section-about-service .cards .card-about-service {
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .section-about-service .cards .card-about-service {
+        margin-bottom: .5rem;
+    }
+
+    main .section-about-service .cards .card-about-service .about-service-content p {
+        font-size: 1.2rem;
+    }
+    
+    main .moments-captured .moments-captured-content:nth-child(1) {
+        grid-column: span 1;
+    }
+    
+    main .moments-captured .moments-captured-content:nth-child(4) {
+        grid-column: span 1;
+    }
+    
+    main .moments-captured .moments-captured-content:nth-child(9) {
+        grid-column: span 1;
+    }
+
+    /* Galerry section */
+    main .gallery-section .photos-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    main .contact-section .contact-section-adress {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    main .contact-section .contact-section-adress {
+        margin-bottom: 2rem;
+    }
 }
