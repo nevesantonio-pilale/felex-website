@@ -92,6 +92,14 @@ main .gallery-section .photos-gallery {
 @media (max-width: 500px) {
     /* Navbar */
 
+    nav .navbar-container {
+        
+    }
+
+    nav .navbar-container .navbar-left {
+        max-width: 100%;
+    }
+
     nav .navbar-container .navbar-left a img{
         display: none;
     }

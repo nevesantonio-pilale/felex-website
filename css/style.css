@@ -27,9 +27,15 @@ a {text-decoration: none;}
 }
 
 /* header navbar */
-nav {
-    background-color: #ffff;
+.fixed-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff; /* Adapte a cor de fundo conforme necessário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicione uma sombra para destacar o menu */
+    z-index: 1000; /* Certifique-se de que o menu esteja acima de outros elementos */
 }
+
 nav .navbar-container {
     display: flex;
     position: sticky;
@@ -102,6 +108,7 @@ nav .navbar-left .menu-trigger {
 header {
     background: #0000 url(/image/img-banner.jpg) no-repeat center center/cover;
     height: 85vh;
+    margin-top: 7rem;
 }
 
 
@@ -348,7 +355,7 @@ main .contact-section-galerry form input[type= "submit"]:hover {
 
 /* SECTION ABOUT */
 main .about-section {
-    margin-top: 2rem;
+    margin-top: 10rem;
     padding: 0.5rem;
     left: 0;
 }
@@ -399,7 +406,7 @@ main .about-section .midia-social a i:hover {
 
 /* SECTION GALLERY */
 main .gallery-section {
-    margin: 1rem 0 2rem 0;
+    margin: 12rem 0 2rem 0;
 }
 
 main .gallery-section p {
@@ -439,7 +446,7 @@ main .gallery-section .photos-gallery .moments-captured-content img {
 
 /* CONTACT SECTION */
 main .contact-section {
-    margin-bottom: 2rem;
+    margin: 12rem 0 2rem 0;
 }
 
 main .contact-section h2 {
