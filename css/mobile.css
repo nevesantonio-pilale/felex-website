@@ -1,4 +1,8 @@
 /* Header */
+header {
+    margin-top: 3.8rem;
+}
+
 header .showcase {
     top: 8rem;
 }
@@ -30,37 +34,13 @@ main .moments-captured .moments-captured-content:nth-child(9) {
     grid-column: span 1;
 }
 
-/* footer */
-
-footer .footer-section {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* SECTION GALLERY */
+main .gallery-section {
+    margin: 5rem 0 2rem 0;
 }
 
-footer .footer-section > div:nth-child(1) {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-footer .footer-section > div:nth-child(2) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-
-footer .footer-section > div:nth-child(2) ul {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-}
-
-
-footer .footer-section > div:nth-child(2) ul li {
-    margin-right: 1rem;
+main .contact-section {
+    margin: 5rem 0 2rem 0;
 }
 
 /* about */
@@ -238,5 +218,57 @@ main .gallery-section .photos-gallery {
 
     main .contact-section .contact-section-adress {
         margin-bottom: 2rem;
+    }
+
+    /* About section */
+    main .about-section {
+        margin-top: 3rem;
+    }
+
+    /* footer */
+
+    footer .footer-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-section > div:nth-child(1) {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer .footer-section > div:nth-child(1) p {
+        display: none;
+    }
+
+    footer .footer-section > div:nth-child(1) h2 {
+        font-size: 1rem;
+    }
+
+    footer .footer-section > div:nth-child(2) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    footer .footer-section > div:nth-child(2) ul {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    footer .footer-section > div:nth-child(2) ul li {
+        margin-right: 1rem;
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    footer .copyright p {
+        font-size: .8rem;
     }
 }
