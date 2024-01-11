@@ -153,6 +153,9 @@ main .gallery-section .photos-gallery {
     }
 
     /* HEADER  */
+    header {
+        margin-top: 2rem;
+    }
     header .showcase {
         top: 3rem;
     }
@@ -162,7 +165,7 @@ main .gallery-section .photos-gallery {
     }
 
     header .showcase .showcase-info p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     header .showcase .showcase-info p span {
@@ -265,12 +268,24 @@ main .gallery-section .photos-gallery {
         flex-direction: row;
         text-align: center;
         align-items: center;
+        justify-content: center;
     }
 
 
     footer .footer-section > div:nth-child(2) ul li {
         margin-right: 1rem;
-        font-size: .8rem;
+        font-size: .5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer .footer-section > div:last-child ul li {
+        margin-right: 1rem;
+        font-size: .9rem;
+        text-align: center;
+    }
+
+    .footer-section > div .title-section {
         text-align: center;
     }
 
