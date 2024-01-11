@@ -305,7 +305,7 @@
         </div>
         <div class="copyright">
             <p>
-                &copy; 2024, todos os direitos reservados a Felex Photography. By: Neves António
+                &copy; <span id="anoCorrente"></span>, todos os direitos reservados a Felex Photography. By: Neves António
             </p>
         </div>
     </footer>
@@ -321,6 +321,13 @@
             navBotton.classList.toggle("show");
             hunburguerIcon.classList.toggle("show");
         });
+
+        // Script para mostrar o ano corrente
+         document.addEventListener("DOMContentLoaded", function() {
+            var anoCorrenteElement = document.getElementById("anoCorrente");
+            anoCorrenteElement.textContent = new Date().getFullYear();
+        });
+
     </script>
 
     <script 
