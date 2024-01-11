@@ -38,7 +38,6 @@ a {text-decoration: none;}
 
 nav .navbar-container {
     display: flex;
-    position: sticky;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -108,7 +107,15 @@ nav .navbar-left .menu-trigger {
 header {
     background: #0000 url(/image/img-banner.jpg) no-repeat center center/cover;
     height: 85vh;
-    margin-top: 7rem;
+    margin-top: 6rem;
+}
+
+header .showcase .showcase-info::before {
+    content: "";
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 
@@ -117,6 +124,10 @@ header .showcase {
     position: relative;
     top: 10rem;
     height: calc(85vh - 10rem);
+}
+
+header .showcase .showcase-info {
+    margin-top: 1rem;
 }
 
 header .showcase .showcase-info h1 {
@@ -139,7 +150,7 @@ header .showcase .showcase-info p span {
 header .showcase .showcase-info .btn {
     background-color: #e9461c;
     padding: 1rem 1rem;
-    margin: 2.3rem auto;
+    margin: 1rem auto;
     cursor: pointer;
     color: #FFFFFF;
     border-radius: 5px;
@@ -148,7 +159,7 @@ header .showcase .showcase-info .btn {
     max-width: 250px;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
     transition: all .2s ease-in-out;
 }
 
@@ -246,10 +257,7 @@ main .moments-captured .moments-captured-content{
     overflow: hidden;
 }
 
-
-
-
-.hover-image, .hover img {
+.hover-image {
     transition: transform 0.3s, filter 0.3s ease-in-out;
 }
 
@@ -266,16 +274,6 @@ main .moments-captured .photos .moments-captured-content img {
     cursor: pointer;
     display: block;
 }
-
-main .moments-captured .photos .moments-captured-content::before {
-   content: "";
-   background-color: #000;
-   position: absolute;
-   top: 0;
-   left: 0;
-   display: block;
-}
-
 
 main .moments-captured .moments-captured-content:nth-child(1) {
     grid-column: 1 / span 2;
@@ -441,6 +439,16 @@ main .gallery-section .photos-gallery .moments-captured-content img {
     background-color: #000;
     position: absolute;
     z-index: 1;
+}
+
+
+.hover-img {
+    transition: transform 0.3s, filter 0.3s ease-in-out;
+}
+
+.hover-img:hover {
+    transform: scale(.9);
+    filter: brightness(80%);
 }
 
 /* CONTACT SECTION */

@@ -1,0 +1,33 @@
+main .section-about-service .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+main .moments-captured .photos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+main .moments-captured .moments-captured-content:nth-child(1) {
+    grid-column: span 1;
+}
+
+main .moments-captured .moments-captured-content:nth-child(4) {
+    grid-column: span 1;
+}
+
+main .moments-captured .moments-captured-content:nth-child(9) {
+    grid-column: span 1;
+}
+
+header .showcase {
+    top: 2rem;
+}
+
+header .showcase .showcase-info p {
+   font-size: 2rem;
+}
+
+main .section-about-service .cards .card-about-service .about-service-content p {
+    font-size: 1.8rem;
+}

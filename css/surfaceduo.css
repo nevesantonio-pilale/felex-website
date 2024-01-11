@@ -1,0 +1,46 @@
+nav .navbar-container .navbar-right {
+    padding-top: 2rem;
+    transition: all .5s ease;
+}
+
+nav .navbar-container .navbar-right ul li {
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+nav .navbar-container .navbar-left {
+    justify-content: space-between;
+}
+
+nav .navbar-left .menu-trigger {
+    display: unset;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5rem;
+}
+
+nav .navbar-container .navbar-right {
+    display: none;
+}
+
+nav .navbar-container .navbar-right.show {
+    display: block;
+}
+
+nav .navbar-container .navbar-left .fa-bars + .fa-times {
+    display: none;
+}
+
+nav .navbar-container .navbar-left .fa-bars.show + .fa-times {
+    display: inline;
+    color: red;
+}
+
+nav .navbar-container .navbar-left .fa-bars.show {
+    display: none;
+}
+
+header .showcase .showcase-info h1 {
+    font-size: 1rem;
+}

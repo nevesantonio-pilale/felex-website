@@ -70,14 +70,10 @@ main .gallery-section .photos-gallery {
 
 /* smartphone */
 @media (max-width: 500px) {
+
     /* Navbar */
-
-    nav .navbar-container {
-        
-    }
-
     nav .navbar-container .navbar-left {
-        max-width: 100%;
+        width: 100%;
     }
 
     nav .navbar-container .navbar-left a img{
@@ -113,6 +109,16 @@ main .gallery-section .photos-gallery {
     }
 
     /* Menu hamburger */
+    nav .navbar-container .navbar-right {
+        padding-top: 2rem;
+        transition: all .5s ease;
+    }
+
+    nav .navbar-container .navbar-right ul li {
+        padding-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
     nav .navbar-container .navbar-left {
         justify-content: space-between;
     }
