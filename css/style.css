@@ -104,20 +104,26 @@ nav .navbar-left .menu-trigger {
 }
 
 /* Header showcase*/
+header .container {
+    position: relative;
+    z-index: 1;
+}
 header {
-    background: #0000 url(/image/img-banner.jpg) no-repeat center center/cover;
+    animation: slideAnimation 15s linear infinite; /* Ajuste a duração conforme necessário */
     height: 85vh;
     margin-top: 6rem;
+    position: relative;
+    overflow: hidden;
 }
 
-header .showcase .showcase-info::before {
-    content: "";
-    background-color: #000;
+header .overlay {
+    position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
 }
-
 
 header .showcase {
     display: flex;
@@ -129,6 +135,9 @@ header .showcase {
 
 header .showcase .showcase-info {
     margin-top: 1rem;
+    position: relative;
+    z-index: 2;
+
 }
 
 header .showcase .showcase-info h1 {
@@ -163,6 +172,23 @@ header .showcase .showcase-info .btn {
     font-size: 1.3rem;
     transition: all .2s ease-in-out;
 }
+
+/* SLIDER */
+@keyframes slideAnimation {
+    0% {
+        background: url(/image/img-banner.jpg) no-repeat center center/cover;
+    }
+    33.33% {
+        background: url(/image/img-fundo.jpg) no-repeat center center/cover;
+    }
+    66.66% {
+        background: url(/image/img-casamento.jpg) no-repeat center center/cover;
+    }
+    100% {
+        background: url(/image/img-cermonias.jpg) no-repeat center center/cover;
+    }
+}
+/* END SLIDER */
 
 header .showcase .showcase-info .btn:hover {
     background-color: #643428;
