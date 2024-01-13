@@ -228,6 +228,14 @@ main .gallery-section .photos-gallery {
     main .contact-section .contact-section-adress {
         margin-bottom: 2rem;
     }
+    main .photos-session form input[type= "submit"],
+    .contact-section-galerry form input[type= "submit"]  {
+    width: 100%;
+}
+
+    main .contact-section .contact-section-adress .contact-section-adress-form input[type = "submit"] {
+        width: 100%;
+    }
 
     /* About section */
     main .about-section {
@@ -241,6 +249,8 @@ main .gallery-section .photos-gallery {
         justify-content: center;
         align-items: center;
     }
+
+    
 
     footer .footer-section > div:nth-child(1) {
         text-align: center;
