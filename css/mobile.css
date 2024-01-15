@@ -162,8 +162,8 @@ main .gallery-section .photos-gallery {
         margin-top: 2rem;
     }
     header .showcase {
-        top: 10rem;
         max-width: 100%;
+        top: 8rem;
     }
 
     header .showcase .showcase-info h1 {

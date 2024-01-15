@@ -136,7 +136,7 @@ header .overlay {
 header .showcase {
     display: flex;
     position: relative;
-    top: 10rem;
+    top: 12rem;
     max-width: 100%;
     height: 85vh;
 }
