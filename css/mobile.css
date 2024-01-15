@@ -205,11 +205,6 @@ main .gallery-section .photos-gallery {
         margin-bottom: .5rem;
     }
 
-    main .section-about-service .cards .card-about-service .about-service-content {
-        width: 100%;
-        background-color: aqua;
-    }
-
     main .section-about-service .cards .card-about-service .about-service-content p {
         font-size: 1.2rem;
     }
