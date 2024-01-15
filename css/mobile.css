@@ -161,9 +161,10 @@ main .gallery-section .photos-gallery {
     header {
         margin-top: 2rem;
     }
+
     header .showcase {
         max-width: 100%;
-        top: 6rem;
+        top: 1rem;
     }
 
     header .showcase .showcase-info h1 {
@@ -219,6 +220,15 @@ main .gallery-section .photos-gallery {
     
     main .moments-captured .moments-captured-content:nth-child(9) {
         grid-column: span 1;
+    }
+
+    main .section-about-service .cards .card-about-service {
+        width: 100%;
+        height: 600px;
+    }
+
+    main .section-about-service .cards .card-about-service img {
+        width: 100%;
     }
 
     /* Galerry section */
