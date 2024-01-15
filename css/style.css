@@ -211,17 +211,16 @@ main .section-about-service .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 1rem;
-    gap: rem;
 }
 
 main .section-about-service .cards .card-about-service {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 
 main .section-about-service .cards .card-about-service:hover {
-    transform: translateY(-1rem);
+    transform: translateY(-2rem);
 }
 
 main .section-about-service p {
