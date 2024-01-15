@@ -71,6 +71,11 @@ main .gallery-section .photos-gallery {
 /* smartphone */
 @media (max-width: 500px) {
 
+    .container {
+        width: 100%; 
+        padding: 1rem;
+    }
+
     /* Navbar */
     nav .navbar-container .navbar-left {
         width: 100%;
@@ -157,7 +162,8 @@ main .gallery-section .photos-gallery {
         margin-top: 2rem;
     }
     header .showcase {
-        top: 3rem;
+        top: 10rem;
+        max-width: 100%;
     }
 
     header .showcase .showcase-info h1 {
@@ -180,6 +186,10 @@ main .gallery-section .photos-gallery {
     }
 
     /* Main */
+    main .photos-session form {
+       width: 100%;
+    }
+
     main .section-about-service .cards {
         grid-template-columns: 1fr;
     }
@@ -192,10 +202,12 @@ main .gallery-section .photos-gallery {
     main .section-about-service .cards .card-about-service {
         align-items: center;
         justify-content: center;
+        margin-bottom: .5rem;
     }
 
-    main .section-about-service .cards .card-about-service {
-        margin-bottom: .5rem;
+    main .section-about-service .cards .card-about-service .about-service-content {
+        width: 100%;
+        background-color: aqua;
     }
 
     main .section-about-service .cards .card-about-service .about-service-content p {
@@ -249,10 +261,12 @@ main .gallery-section .photos-gallery {
         justify-content: center;
         align-items: center;
     }
-
-    
+    footer .footer-section > div {
+        width: 100%;
+    }
 
     footer .footer-section > div:nth-child(1) {
+        max-width: 100%;
         text-align: center;
         align-items: center;
         justify-content: center;
